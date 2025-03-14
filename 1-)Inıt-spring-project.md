@@ -8,4 +8,4 @@ Spring projesi oluşturmak için Intellij Idea veya Spring Initializr (https://s
    b. War: Sunucuya deploy alınacak uygulamalar için.
    **Hint: Jar export yapılırken webapps altında kalan kısımlar ignore edilir. Webapps altı war exportları için işleme alınır. Jar uygulaması yazarken webapps kullanmamaya dikkat edilmelidir.**
 
-![](@attachment/Clipboard_2025-03-14-11-56-58.png)
+![](@attachments/Clipboard_2025-03-14-11-56-58.png)
