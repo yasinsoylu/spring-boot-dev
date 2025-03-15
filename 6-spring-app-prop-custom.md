@@ -18,6 +18,7 @@ private String petName;
 ```
 Bu şekilde @Value("${attribute}") kullanarak değeri get edebiliyoruz. 
 #
+#### HTTP Props
 Ek olarak **application_properties** dosyası içerisine farklı tanımlamalar da sağlanabilir. Loglanma yönetmi, log dosyası path tanımı, http tanımları vs.
 ```
 # HTTP Props
@@ -26,3 +27,22 @@ server.servlet.context-path=/app
 ```
 Bu şekilde http tanımı yapılarak default olan port değeri özelleştirilebilir ve context-path belirlenerek her endpoint'i bunun altından sağlayabiliriz.
 >![](/attachment/Clipboard_2025-03-14-14-51-29.png)
+#
+#### Actuator Props
+Aynı zamanda Actuator için de ayarlamalar sağlanabilmektedir. Önceki yazılarımızda olduğu gibi include ve exclude edilecek methodalar belirtilebilir. 
+Ayrıca actuator için default base end point'i (/actuator) değiştirilebilir.
+```
+management.endpoints.web.base-path=/mypath
+```
+>![](/attachment/Clipboard_2025-03-15-11-46-26.png)
+Böylece default olan /actuator yerine /mypath gibi istediğimiz bir değer ataması yapabiliriz
+#
+#### Security Props
+Security ayarlarında default olarak username = user ataması mevcuttur ve password için spring projemiz ayağa kalkarken üretilen token kullanılır.
+Ancak bunu biz tanımlayarak özelleştirebiliriz.
+```
+# Spring security:
+spring.security.user.name=admin
+spring.security.user.password=topsecret
+```
+>![](@attachment/Clipboard_2025-03-15-11-56-04.png)
