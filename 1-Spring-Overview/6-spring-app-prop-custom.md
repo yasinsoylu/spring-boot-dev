@@ -26,7 +26,7 @@ server.port=9548
 server.servlet.context-path=/app
 ```
 Bu şekilde http tanımı yapılarak default olan port değeri özelleştirilebilir ve context-path belirlenerek her endpoint'i bunun altından sağlayabiliriz.
->![](/attachment/Clipboard_2025-03-14-14-51-29.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-51-29.png)
 #
 #### Actuator Props
 Aynı zamanda Actuator için de ayarlamalar sağlanabilmektedir. Önceki yazılarımızda olduğu gibi include ve exclude edilecek methodalar belirtilebilir. 
@@ -34,7 +34,7 @@ Ayrıca actuator için default base end point'i (/actuator) değiştirilebilir.
 ```
 management.endpoints.web.base-path=/mypath
 ```
->![](/attachment/Clipboard_2025-03-15-11-46-26.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-15-11-46-26.png)
 
 Böylece default olan /actuator yerine /mypath gibi istediğimiz bir değer ataması yapabiliriz
 #
@@ -46,4 +46,4 @@ Ancak bunu biz tanımlayarak özelleştirebiliriz.
 spring.security.user.name=admin
 spring.security.user.password=topsecret
 ```
->![](/attachment/Clipboard_2025-03-15-11-56-04.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-15-11-56-04.png)

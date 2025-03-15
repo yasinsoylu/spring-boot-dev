@@ -3,7 +3,7 @@ Spring Boot projemizde bir endpoint'i disable etmek için **Application_properti
 ```
 management.endpoints.web.exposure.exclude=beans,health
 ```
->![](/attachment/Clipboard_2025-03-14-14-48-20.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-48-20.png)
 
 Böylece ilgili endpointler 404 olarak dönmektedir. Bu kapsamda ulaşılmasını istemediğimiz endpointler için exclude olarak belirtebiliriz.
->![](/attachment/Clipboard_2025-03-14-14-48-30.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-48-30.png)

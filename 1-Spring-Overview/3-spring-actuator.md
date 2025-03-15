@@ -9,7 +9,7 @@ Actuator kullanımı için gerekli aşamalar:
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
    ```
-   >![](/attachment/Clipboard_2025-03-14-14-20-28.png)
+   >![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-20-28.png)
 
 2. Application properties içerisine kullanılacak spring actuator hizmetleri belirlenir;
    ```
@@ -17,12 +17,12 @@ Actuator kullanımı için gerekli aşamalar:
     management.endpoints.web.exposure.include=health,info
     management.info.env.enabled=true
    ```
-   >![](/attachment/Clipboard_2025-03-14-14-22-45.png)
+   >![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-22-45.png)
 
    **Hint:** Eğer ki **management.endpoints.web.exposure.include=*** olarak tanımlanırsa, wildcard kullanımı ile * işareti 14 default endpointi hizmete açar.  
 #
 ### /actuator/health endpointi:
->![](/attachment/Clipboard_2025-03-14-14-33-09.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-33-09.png)
 #
 ### /actuator/ifno endpointi:
 Info endpointi default olarak {} olarak boş json döner. Bunun sebebi ***application_properties*** altında info dağılımı sağlanmadığı içindir.
@@ -38,13 +38,13 @@ info.pet.type=Cat
 info.pet.birthdate=2020
 ```
 
->![](/attachment/Clipboard_2025-03-14-14-29-48.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-29-48.png)
 #
 ### /actuator/* endpointi:
 Projede Security Ayarları ile beraber kontrollü şekilde endpoint ayarlaması için management.endpoints.web.exposure.include=* tanımlaması sağlanır.
 
 Bu sayede /actuator/beans, /actuator/mappings, /actuator/threaddump gibi endpointler de açılır. Ancak bu endpoint sonuçları çok fazla proje açığı içerebileceği için bir sonraki yazıda yer alan security ayarları ile kontrol sağlanabilir.
 
->![](/attachment/Clipboard_2025-03-14-14-32-07.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-32-07.png)
 
->![](/attachment/Clipboard_2025-03-14-14-32-20.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-32-20.png)

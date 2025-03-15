@@ -10,7 +10,7 @@ Spring projesi geliştirme sürecinde her kod değişikliğinden sonra tüm serv
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 ```
-![](/attachment/Clipboard_2025-03-14-14-17-56.png)
+![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-17-56.png)
 
 Ardından Intellij'in kendi ayarlarında yer alan iki checkbox işaretlenmelidir.
 

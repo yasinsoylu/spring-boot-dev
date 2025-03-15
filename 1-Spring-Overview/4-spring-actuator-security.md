@@ -11,16 +11,16 @@ Bu aşamada security adımları yer almaktadır.
     <artifactId>spring-boot-starter-security</artifactId>
   </dependency>
 ```
->![](/attachment/Clipboard_2025-03-14-14-40-09.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-40-09.png)
 
 Spring projesi her seferinde ayağa kalkarken Basic Auth kullanımı için default "user" kullanıcısına bir password oluşturur. Bu şifreyi loglardan takip edebiliriz.
 
->![](/attachment/Clipboard_2025-03-14-14-40-27.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-40-27.png)
 
 **Note: Actuator tarafından sağlanan /actuator/health endpointi hariç kalan tüm özel ve default endpointler kilitlenmektedir.**
 #
 Bu şekilde artık bizim actuator ile istek attığımız endpointlerimiz health haricinde login olunmasını zorunlu kılmıştır.
->![](/attachment/Clipboard_2025-03-14-14-41-00.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-41-00.png)
 #
 Aynı şekilde postman'den de istek atarken **Basic Auth** seçilerek token yardımı ile istek atılabilir.
->![](/attachment/Clipboard_2025-03-14-14-46-08.png)
+>![](/1-Spring-Overview/attachment/Clipboard_2025-03-14-14-46-08.png)
