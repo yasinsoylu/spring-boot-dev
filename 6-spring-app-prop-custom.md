@@ -35,6 +35,7 @@ Ayrıca actuator için default base end point'i (/actuator) değiştirilebilir.
 management.endpoints.web.base-path=/mypath
 ```
 >![](/attachment/Clipboard_2025-03-15-11-46-26.png)
+
 Böylece default olan /actuator yerine /mypath gibi istediğimiz bir değer ataması yapabiliriz
 #
 #### Security Props
