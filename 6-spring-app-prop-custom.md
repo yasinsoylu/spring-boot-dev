@@ -45,4 +45,4 @@ Ancak bunu biz tanımlayarak özelleştirebiliriz.
 spring.security.user.name=admin
 spring.security.user.password=topsecret
 ```
->![](@attachment/Clipboard_2025-03-15-11-56-04.png)
+>![](/attachment/Clipboard_2025-03-15-11-56-04.png)
